@@ -1,0 +1,100 @@
+*
+  margin: 0
+  padding: 0
+
+$cod-black: #140f12
+$cod-gray: #31232a
+$mauvelous: #f284b4
+$mauvelous-pallid: #eed3df
+$twilight-gum: #ffb3dd
+$twilight: #e9d4e0
+$copper-rust: #eed3df
+$hibiscus: #9d2b4a
+$hibiscus-light: #dc869f
+
+.border-radius-top
+  border-top-left-radius: 25px
+  border-top-right-radius: 25px
+
+.border-radius-bottom
+  border-bottom-right-radius: 25px
+  border-bottom-left-radius: 25px
+
+.general-padding
+  padding: 10px
+
+body
+  background-color: $cod-gray
+  color: black
+  min-width: 200px
+  margin: auto
+  font-family: "Open Sans", sans-serif
+  font-weight: 200
+  height: 100%
+  width: 100%
+  display: flex
+  .main-container
+    margin: 10% auto auto
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    background-color: $copper-rust
+    border-radius: 25px
+  header
+    @extend .border-radius-top
+    background-color: $mauvelous
+    width: 100%
+    h1
+      text-align: center
+      padding: 30px
+      font-size: 40px
+
+form
+  display: flex
+  flex-direction: column
+  label
+    span
+      @extend .general-padding
+      font-weight: bold
+      color: $cod-black
+      display: block
+      background-color: $mauvelous-pallid
+      text-align: center
+    input#num-tabla
+      @extend .general-padding
+      border: none
+  button
+    @extend .general-padding
+    color: $twilight
+    font-weight: bold
+    background-color: $hibiscus
+    border: none
+    &:hover
+      background-color: $twilight-gum
+      color: $cod-black
+      cursor: pointer
+
+.result-container
+  @extend .border-radius-bottom
+  background-color: $twilight
+  display: flex
+  width: auto
+  .table-result
+    border-collapse: collapse
+    padding: 0 20px
+    caption
+      background-color: $hibiscus-light
+      font-weight: bold
+      padding: 10px
+    thead
+      tr
+        border-radius: 25px
+        th
+          padding: 10px
+          background: $twilight-gum
+    td
+      @extend .border-radius-bottom
+      text-align: center
+      padding: 5px
+      background-color: $mauvelous-pallid

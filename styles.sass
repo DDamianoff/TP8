@@ -50,20 +50,23 @@ body
       padding: 30px
       font-size: 40px
 
-form
+.calcular
   display: flex
   flex-direction: column
-  label
-    span
-      @extend .general-padding
-      font-weight: bold
-      color: $cod-black
-      display: block
-      background-color: $mauvelous-pallid
-      text-align: center
-    input#num-tabla
-      @extend .general-padding
-      border: none
+  form
+    display: flex
+    flex-direction: column
+    label
+      span
+        @extend .general-padding
+        font-weight: bold
+        color: $cod-black
+        display: block
+        background-color: $mauvelous-pallid
+        text-align: center
+      input#num-tabla
+        @extend .general-padding
+        border: none
   button
     @extend .general-padding
     color: $twilight
